@@ -57,3 +57,11 @@ let mAudio = new Metronome({
 mAudio.start();
 
 ```
+
+Stopping: 
+
+```typescript
+
+m.stop();
+
+```
