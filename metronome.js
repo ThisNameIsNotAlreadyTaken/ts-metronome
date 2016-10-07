@@ -103,7 +103,10 @@ var Metronome = (function () {
             _this.audioContext.decodeAudioData(audioData, function (buffer) {
                 _this.audioBuffer = buffer;
                 _this.startWorker();
-            }, function () { console.error("Error with decoding audio data"); });
+            }, function () { throw new Error("Error with decoding audio data"); });
+        };
+        request.onerror = function () {
+            throw new Error("An error occurred while trying to get an audio file");
         };
         request.send();
     };
