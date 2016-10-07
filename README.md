@@ -12,8 +12,48 @@ This version of the metronom provides two playing methods (tick and audio), that
 
 #### Options
 
-- ``tempo``: ``number`` beats per minute
-- ``audioUrl``: ``string`` custom url to play you own sound as a tick
-- ``noteLength``: ``number`` length of "beep" (in seconds)
-- ``noteLength``: ``number`` length of note (full, half, quarter, etc..)
-- ``playType``: ``number`` tick or audio
+- ``tempo``: ``number`` beats per minute (default 120)
+- ``audioUrl``: ``string`` custom url to play you own sound as a tick (default null)
+- ``noteLength``: ``number`` length of "beep" (in seconds) (default 0.1)
+- ``noteResolution``: ``MetronomeNoteResolution`` length of note (full, half, quarter, etc..) (default Quarter)
+- ``playType``: ``MetronomePlayType`` tick or audio (will require an audioUrl) (default Tick)
+
+#### Usage
+
+Simple init: 
+
+```typescript
+
+let m = new Metronome();
+m.start();
+
+```
+
+Advanced init:
+
+```typescript
+
+// ticks
+
+let mTick = new Metronome({
+    tempo: 120,
+    playType: MetronomePlayType.Tick,
+    noteResolution: MetronomeNoteResolution.Quarter,
+    noteLength: 0.1
+});
+
+mTick.start();
+
+// audio
+
+let mAudio = new Metronome({
+    tempo: 120,
+    playType: MetronomePlayType.Audio,
+    audioUrl: "https://crossorigin.me/http://audiosoundclips.com/wp-content/uploads/2011/12/Drum1.mp3",
+    noteResolution: MetronomeNoteResolution.Quarter,
+    noteLength: 0.1
+});
+
+mAudio.start();
+
+```
