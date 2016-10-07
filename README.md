@@ -12,11 +12,11 @@ This version of the metronom provides two playing methods (tick and audio), that
 
 #### Options
 
-- ``tempo``: ``number`` beats per minute (default 120)
-- ``audioUrl``: ``string`` custom url to play you own sound as a tick (default null)
-- ``noteLength``: ``number`` length of "beep" (in seconds) (default 0.1)
-- ``noteResolution``: ``MetronomeNoteResolution`` length of note (full, half, quarter, etc..) (default Quarter)
-- ``playType``: ``MetronomePlayType`` tick or audio (will require an audioUrl) (default Tick)
+- ``tempo``: ``number`` beats per minute ``(default 120)``
+- ``audioUrl``: ``string`` custom url to play you own sound as a tick ``(default null)``
+- ``noteLength``: ``number`` length of "beep" (in seconds) ``(default 0.1)``
+- ``noteResolution``: ``MetronomeNoteResolution`` length of note (full, half, quarter, etc..) ``(default Quarter)``
+- ``playType``: ``MetronomePlayType`` tick or audio (will require an audioUrl) ``(default Tick)``
 
 #### Usage
 
