@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 enum MetronomePlayType {
     Tick,
@@ -40,7 +40,7 @@ class Metronome {
         noteResolution: MetronomeNoteResolution.Quarter,
         playType: MetronomePlayType.Tick
     };
-    
+
     private isPlaying = false;
 
     private lookahead = 25.0; // How frequently to call scheduling function (in milliseconds)
@@ -159,8 +159,11 @@ class Metronome {
                     this.audioBuffer = buffer;
                     this.startWorker();
                 },
-                () => { console.error("Error with decoding audio data"); });
+                () => { throw new Error("Error with decoding audio data"); });
         }
+        request.onerror = () => {
+            throw new Error("An error occurred while trying to get an audio file");
+        };
         request.send();
     }
 
