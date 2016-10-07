@@ -68,5 +68,5 @@ m.stop();
 
 ## Note
 
-The metronome is using an "Object.assign" function (you might need a polyfill for old browsers) and "AudioContext" (won't work on IE), so be careful.
+The metronome is using an "Object.assign" function (you might need a polyfill for old browsers) and the "AudioContext" interface  (so it won't work properly on IE), so be careful.
 
