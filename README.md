@@ -12,8 +12,8 @@ This version of the metronom provides two playing methods (tick and audio), that
 
 #### Options
 
-- ``tempo``: beats per minute (int number)
-- ``audioUrl``: custom url to play you own sound as a tick
-- ``noteLength``: length of "beep" (in seconds)
-- ``noteLength``: length of note (full, half, quarter, etc..)
-- ``playType``: 
+- ``tempo``: ``number`` beats per minute
+- ``audioUrl``: ``string`` custom url to play you own sound as a tick
+- ``noteLength``: ``number`` length of "beep" (in seconds)
+- ``noteLength``: ``number`` length of note (full, half, quarter, etc..)
+- ``playType``: ``number`` tick or audio
