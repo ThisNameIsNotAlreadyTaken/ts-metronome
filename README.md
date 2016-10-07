@@ -68,7 +68,7 @@ m.stop();
 
 ## Sample
 
-Just run the metronome-sample.html on your browser.
+Just run the ``metronome-sample.html`` on your browser.
 
 ## Notes
 
