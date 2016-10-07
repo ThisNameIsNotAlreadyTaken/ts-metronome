@@ -66,7 +66,12 @@ m.stop();
 
 ```
 
-## Note
+## Notes
 
 The metronome is using an "Object.assign" function (you might need a polyfill for old browsers) and the "AudioContext" interface  (so it won't work properly on IE), so be careful.
+
+## After all
+
+Check it out, feel free to submit issues or requests, if you've found ones, fork, submit pull requests, etc. 
+Enjoy you music training!
 
