@@ -10,7 +10,7 @@ It represents a good way to handle timings throughout the collaboration between 
 
 This version of the metronome provides two playing methods (tick and audio), that allows you to play your own sounds or use the standard Web Audio ticks. You can also change some options like tempo, noteLength, noteResolution "on the fly" (while playing).
 
-#### Options
+## Options
 
 - ``tempo``: ``number`` beats per minute ``(default 120)``
 - ``audioUrl``: ``string`` custom url to play you own sound as a tick ``(default null)``
@@ -18,7 +18,7 @@ This version of the metronome provides two playing methods (tick and audio), tha
 - ``noteResolution``: ``MetronomeNoteResolution`` length of note (full, half, quarter, etc..) ``(default Quarter)``
 - ``playType``: ``MetronomePlayType`` tick or audio (will require an audioUrl) ``(default Tick)``
 
-#### Usage
+## Usage
 
 Simple init: 
 
